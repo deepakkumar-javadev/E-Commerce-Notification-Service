@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: ECOM-NOTIFICATION-SERVICE
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecomnotificationdb
+    username: root
+    password: Deepak@87083
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: macyproject61@gmail.com
+    password: gqqugyfltveblqbc
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8088
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+  instance:
+    prefer-ip-address: true

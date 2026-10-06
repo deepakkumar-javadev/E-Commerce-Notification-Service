@@ -1,0 +1,21 @@
+package com.deepak.notification.entity;
+
+public enum NotificationType {
+
+	ORDER_PLACED, 
+	ORDER_CONFIRMED,
+
+	PAYMENT_SUCCESS,
+	PAYMENT_FAILED,
+
+	ORDER_CANCELLED,
+
+	ORDER_SHIPPED,
+	ORDER_OUT_FOR_DELIVERY, 
+	ORDER_DELIVERED,
+
+	REFUND_INITIATED, 
+	REFUND_COMPLETED
+
+
+}
